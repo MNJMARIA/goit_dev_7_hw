@@ -1,7 +1,7 @@
 public class App {
-    public static void main(String[] args) throws Exception {
-        HttpStatusImageDownloader downloader = new HttpStatusImageDownloader();
+    public static void main(String[] args){
+        HttpImageStatusCli cli = new HttpImageStatusCli();
 
-        downloader.downloadStatusImage(404);
+        cli.askStatus();
     }
 }

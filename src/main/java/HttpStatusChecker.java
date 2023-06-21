@@ -21,7 +21,7 @@ public class HttpStatusChecker {
         if(response.statusCode() == 200){
             return url;
         }else{
-            throw new Exception();
+            throw new Exception("There is no image for HTTP status " + code);
         }
     }
 }
